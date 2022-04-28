@@ -1,0 +1,8 @@
+
+<section class="performers" *ngIf="(performers | async) as performers">
+    <ul>
+        <li *ngFor="let performer of performers">
+            <app-performer [performer]="performer"></app-performer>
+        </li>
+    </ul>
+</section>

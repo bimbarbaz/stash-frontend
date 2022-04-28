@@ -31,7 +31,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              {
+                "input": "src/scss/styles.scss",
+                "inject": false
+              },
+              {
+                "input": "src/scss/vendors.scss",
+                "bundleName": "vendors"
+              }
             ],
             "scripts": []
           },

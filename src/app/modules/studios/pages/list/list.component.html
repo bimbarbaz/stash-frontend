@@ -1,0 +1,13 @@
+
+<section class="studios" *ngIf="studios | async as studios">
+    <section class="studio" *ngFor="let studio of studios">
+        <header>
+            <img class="logo" width=150 [src]="studio.image_path">
+        </header>
+        <section class="info">
+            <h2>{{studio.name}}</h2>
+            <p>{{studio.details}}</p>
+        </section>
+    </section>
+
+</section>

@@ -1,0 +1,4 @@
+img, video {
+    filter: blur(8px);
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%);
+}

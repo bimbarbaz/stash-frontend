@@ -1,0 +1,9 @@
+<section class="scene">
+    <video width="100%" src="{{ scene.paths.stream }}" controls></video>
+    <h1>{{ scene.title }}</h1>
+    <p *ngIf="scene.details">{{ scene.details }}</p>
+    
+    <section class="performers" *ngIf="scene.performers as performers">
+        <app-performer *ngFor="let performer of performers" [performer]="performer"></app-performer>
+    </section>    
+</section>

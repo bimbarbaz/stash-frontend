@@ -1,0 +1,7 @@
+<section class="tags" *ngIf="tags | async as tags">
+    <section class="tag" *ngFor="let tag of tags">
+        <section class="info">
+            <p>{{tag.name}} ({{tag.scene_count}} scenes)</p>
+        </section>
+    </section>
+</section>

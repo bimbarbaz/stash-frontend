@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate-graphql-types": "graphql-codegen --config codegen.yml"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +19,12 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@apollo/client": "^3.0.0",
+    "apollo-angular": "^3.0.1",
+    "graphql": "^16",
+    "ngx-scroll-position-restoration": "^0.1.4",
     "rxjs": "~7.5.0",
+    "sanitize.css": "^13.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -26,6 +32,11 @@
     "@angular-devkit/build-angular": "~13.3.3",
     "@angular/cli": "~13.3.3",
     "@angular/compiler-cli": "~13.3.0",
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/time": "^3.1.1",
+    "@graphql-codegen/typescript": "2.4.8",
+    "@graphql-codegen/typescript-apollo-angular": "3.4.7",
+    "@graphql-codegen/typescript-operations": "2.3.5",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",

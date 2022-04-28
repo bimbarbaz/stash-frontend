@@ -1,0 +1,28 @@
+section.scenes {
+  .scene {
+    header {
+      img {
+        display: block;
+        width: 100%;
+
+        &.preview {
+          display: none;
+        }
+      }
+    }
+
+    &:hover {
+      header {
+        img {
+          &.preview {
+            display: block;
+          }
+  
+          &.screenshot {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<section *ngIf="(stats | async) as stats" id="statistics">
+    <ul>
+        <li>Gallery count: {{ stats.gallery_count }}</li>
+        <li>Image count: {{ stats.image_count }}</li>
+        <li>Image size: {{ stats.images_size }}</li>
+        <li>Movie count: {{ stats.movie_count }}</li>
+        <li>Performer count: {{ stats.performer_count }}</li>
+        <li>Scene count: {{ stats.scene_count }}</li>
+        <li>Scenes duration: {{ stats.scenes_duration }}</li>
+        <li>Scenes size: {{ stats.scenes_size }}</li>
+        <li>Studio count: {{ stats.studio_count }}</li>
+        <li>Tag count: {{ stats.tag_count }}</li>
+    </ul>
+</section>
