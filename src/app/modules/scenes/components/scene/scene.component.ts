@@ -1,10 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Scene } from 'src/app/generated/graphql-types';
 
 @Component({
-  selector: 'app-scene',
-  templateUrl: './scene.component.html'
+  selector: '[scene]',
+  templateUrl: './scene.component.html',
+  styleUrls: ['./scene.component.scss']
 })
 export class SceneComponent implements OnInit {
+
+  @Input() scene!: Scene;
 
   constructor() { }
 

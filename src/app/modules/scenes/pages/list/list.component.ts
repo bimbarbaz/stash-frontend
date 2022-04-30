@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { QueryRef } from 'apollo-angular';
 import { map, Observable } from 'rxjs';
 import { FindScenesGQL, Scene } from 'src/app/generated/graphql-types';
 
 @Component({
   selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+  templateUrl: './list.component.html'
 })
 export class ListComponent implements OnInit {
 
@@ -15,7 +13,6 @@ export class ListComponent implements OnInit {
   scenes!: Observable<Scene[]>;
 
   constructor(private findScenesGQL: FindScenesGQL) {}
-
 
   ngOnInit(): void {
     this.scenes = <Observable<Scene[]>> this.findScenesGQL.watch({

@@ -1,1 +1,12 @@
-<p>scene works!</p>
+<article class="scene">
+  <header>
+      <a routerLink="/scenes/{{scene.id}}">
+          <img class="screenshot" [src]="scene.paths.screenshot">
+          <img class="preview" [src]="scene.paths.webp">
+      </a>
+  </header>
+  <section class="info">
+      <h2>{{scene.title}}</h2>
+      <p>{{scene.details}}</p>
+  </section>
+</article>

@@ -1,17 +1,6 @@
 <input type="text" [(ngModel)]="query" (ngModelChange)="onSearchChange()" />
 <button>something</button>
 
-<section class="scenes" *ngIf="(scenes | async) as scenes">
-    <section class="scene" *ngFor="let scene of scenes">
-        <header>
-            <a routerLink="/scenes/{{scene.id}}">
-                <img class="screenshot" [src]="scene.paths.screenshot">
-                <img class="preview" [src]="scene.paths.webp">
-            </a>
-        </header>
-        <section class="info">
-            <h2>{{scene.title}}</h2>
-            <p>{{scene.details}}</p>
-        </section>
-    </section>
-</section>
+<ul class="scenes" *ngIf="(scenes | async) as scenes">
+  <li *ngFor="let scene of scenes" [scene]="scene"></li>
+</ul>
