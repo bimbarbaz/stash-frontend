@@ -1,0 +1,61 @@
+<header>
+  <section id="logo">
+    <a routerLink="/dashboard" routerLinkActive="active">
+      <i icon>inventory_2</i>
+      <span>Stash</span>
+    </a>
+  </section>
+  <nav id="navigation">
+    <ul>
+      <li>
+        <a routerLink="/scenes" routerLinkActive="active">
+          <i icon>play_circle</i>
+          <span>Scenes</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/performers" routerLinkActive="active">
+          <i icon>person</i>
+          <span>Performers</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/studios" routerLinkActive="active">
+          <i icon>videocam</i>
+          <span>Studios</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/tags" routerLinkActive="active">
+          <i icon>sell</i>
+          <span>Tags</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section id="manage">
+    <ul>
+      <li>
+        <a routerLink="/support" routerLinkActive="active">
+          <i icon>favorite</i>
+          <span>Support Us</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/settings" routerLinkActive="active">
+          <i icon>settings</i>
+          <span>Settings</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/help" routerLinkActive="active">
+          <i icon>help</i>
+          <span>Help</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

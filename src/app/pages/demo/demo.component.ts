@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Performer, PerformerCreateDocument } from 'src/app/generated/graphql-types';
 
 @Component({
   selector: 'app-demo',
@@ -6,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoComponent implements OnInit {
 
+  performer!: Performer;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    this.performer =  <Performer> {
+      id: '',
+      name: 'Bitch'
+    }
   }
 
 }

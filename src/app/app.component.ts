@@ -4,7 +4,7 @@ import { ConfigurationGQL } from 'src/app/generated/graphql-types';
 
 @Component({
   selector: 'app-root',
-  template: `<router-outlet></router-outlet>`,
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'Stash - but pretty';
@@ -32,5 +32,5 @@ export class AppComponent {
     style.innerHTML = styles;
     this.document.head.appendChild(style);
   }
-  
+
 }
